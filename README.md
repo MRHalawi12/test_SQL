@@ -7,4 +7,7 @@ jawaban soal https://www.testdome.com/questions/sql/workers/13562?visibility=1&s
 
 
 SELECT name FROM employees
+
+
+
 WHERE id NOT IN (SELECT managerId FROM employees WHERE managerId IS NOT NULL);
